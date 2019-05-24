@@ -1,0 +1,223 @@
+/* tab */
+#seller-info .nav-tabs {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: none;
+}
+#seller-info .nav-tabs>li>a,
+#seller-info .nav-tabs>li>i {
+    color: #999;
+    font-weight: 500;
+}
+#seller-info .nav-tabs>li.active>a, 
+#seller-info .nav-tabs>li.active>a:focus, 
+#seller-info .nav-tabs>li.active>a:hover {
+    border: 1px solid transparent;
+    cursor: default;
+    background-color: #fff;
+    color: #1dbf73;
+}
+#seller-info .nav>li>a:focus, 
+#seller-info .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #fff;
+}
+#seller-info .nav-tabs>li>a:hover {
+    border-color: transparent;
+}
+#seller-info .nav-tabs li span {
+    background: #ccc;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 100%;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right: 9px;
+}
+#seller-info .nav-tabs li.active span {
+    background: #1dbf73;
+}
+#seller-info .rate {
+    padding-right: 15px;
+}
+
+/* form */
+.upload-personal-info {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.upload-personal-info h2 {
+	font-size: 26px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    color: #000;
+    margin: 5px 0;
+    padding-left: 8px;
+}
+.upload-personal-info p.subtitle {
+    padding-left: 10px; 
+    width: 50%;
+}
+#seller-info .pull-right span,
+.upload-personal-info p {
+    color: #999;
+    font-weight: 500;
+}
+.upload-personal-info .form-horizontal {
+	padding: 25px 25px;
+	background-color: #fff;
+}
+.upload-personal-info .form-horizontal .control-label {
+	text-align: left; 
+}
+.upload-personal-info .form-group p.text-right {
+	margin-bottom: 15px;
+	font-size: 13px;
+}
+.upload-personal-info .form-group p {
+	margin-bottom: 0;
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 1.2;
+}
+.upload-personal-info .form-horizontal a:hover {
+	text-decoration: none;
+}
+#seller-info .divider {
+	height: 1px;
+	background-color: #dbdbdb;
+	margin: 20px 0;
+	clear: both;
+}
+.upload-personal-info .form-group {
+	margin-bottom: 25px;
+	position: relative;
+}
+.upload-personal-info .upload-photo:hover {
+    background-color: #fff;
+}
+.upload-personal-info .media-container .col-xs-12 {
+    margin-bottom: 15px;
+}
+.upload-personal-info .img-container .img-thumbnail {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-height: 100%;
+}
+.upload-personal-info .media-container {
+    position: relative;
+}
+.upload-personal-info .img-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+}
+.upload-personal-info figure {
+    position: relative;
+    text-align: center;
+    margin: 0 auto 15px;
+    width: 150px;
+    height: 150px;
+}
+.upload-personal-info figure:hover figcaption {
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.upload-personal-info figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.75);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.upload-personal-info figcaption button {
+    width: 100px;
+    margin: 5px auto;
+}
+.upload-personal-info .list-inline.wysihtml5-toolbar {
+    margin-left: 0;
+    border: 1px solid #dbdbdb;
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding: 10px 10px;
+}
+.upload-personal-info .wysihtml5-toolbar.list-inline>li {
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 5px;
+}
+.upload-personal-info .list-inline.wysihtml5-toolbar .btn-default {
+    padding: 5px 10px;
+}
+
+@media (max-width: 992px) {
+    #seller-info .rate {
+        float: none !important;
+        width: 50%;
+        margin-top: 15px;
+        display: inline-block;
+}
+@media (max-width: 768px) {
+    .upload-personal-info p.subtitle {
+        width: 100%;
+    }
+    .upload-personal-info .form-control {
+        margin-bottom: 10px;
+    }
+    #seller-info .rate {
+        width: 100%;
+    }
+    #seller-info .top-divider {
+        margin-top: 0;
+    }
+}
+@media (max-width: 576px) {
+    #seller-info .nav-tabs>li>i {
+        display: none;
+    }
+    #seller-info .nav-tabs {
+        flex-direction: column;
+        width: 100%;
+        align-items: normal;
+    }
+
+}
