@@ -1,8 +1,19 @@
+#seller-info a:focus {
+    outline: 0;
+}
+
 /* tab */
 #seller-info .nav-tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     border-bottom: none;
 }
 #seller-info .nav-tabs>li>a,
@@ -29,15 +40,12 @@
 #seller-info .nav-tabs li span {
     background: #ccc;
     display: -webkit-inline-box;
-    display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
     color: #fff;
@@ -63,7 +71,7 @@
     padding-bottom: 25px;
 }
 .upload-personal-info h2 {
-	font-size: 26px;
+    font-size: 26px;
     font-weight: 700;
     line-height: 36px;
     letter-spacing: 0.02em;
@@ -81,34 +89,34 @@
     font-weight: 500;
 }
 .upload-personal-info .form-horizontal {
-	padding: 25px 25px;
-	background-color: #fff;
+    padding: 25px 25px;
+    background-color: #fff;
 }
 .upload-personal-info .form-horizontal .control-label {
-	text-align: left; 
+    text-align: left; 
 }
 .upload-personal-info .form-group p.text-right {
-	margin-bottom: 15px;
-	font-size: 13px;
+    margin-bottom: 15px;
+    font-size: 13px;
 }
 .upload-personal-info .form-group p {
-	margin-bottom: 0;
+    margin-bottom: 0;
     margin-top: 5px;
     font-size: 12px;
     line-height: 1.2;
 }
 .upload-personal-info .form-horizontal a:hover {
-	text-decoration: none;
+    text-decoration: none;
 }
 #seller-info .divider {
-	height: 1px;
-	background-color: #dbdbdb;
-	margin: 20px 0;
-	clear: both;
+    height: 1px;
+    background-color: #dbdbdb;
+    margin: 20px 0;
+    clear: both;
 }
 .upload-personal-info .form-group {
-	margin-bottom: 25px;
-	position: relative;
+    margin-bottom: 25px;
+    position: relative;
 }
 .upload-personal-info .upload-photo:hover {
     background-color: #fff;
@@ -195,6 +203,7 @@
         width: 50%;
         margin-top: 15px;
         display: inline-block;
+    }
 }
 @media (max-width: 768px) {
     .upload-personal-info p.subtitle {
@@ -215,9 +224,14 @@
         display: none;
     }
     #seller-info .nav-tabs {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         width: 100%;
-        align-items: normal;
+        -webkit-box-align: normal;
+            -ms-flex-align: normal;
+                align-items: normal;
     }
 
 }

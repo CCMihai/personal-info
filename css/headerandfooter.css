@@ -1,3 +1,10 @@
+body {
+	background-color: #F5F6F8;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+}
 header .navbar-fixed-top,
 footer .bg-dark {
 	background-color: #292e3e;
@@ -5,6 +12,15 @@ footer .bg-dark {
 header .navbar-fixed-top {
 	height: 72px;
 	margin-bottom: 0;
+}
+.fixed {
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 99;
+}
+main {
+	padding-top: 115px;
 }
 .primary-menu {
 	border-bottom: 1px solid #dbdbdb;
@@ -107,6 +123,17 @@ footer .navbar-nav {
 }
 footer .copyright {
 	float: right;
+}
+footer .bottom {
+	background-color: #292e3e;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+footer .bottom-nav a {
+	color: #fff;
+}
+footer {
+	padding-top: 0;
 }
 @media (max-width: 991px) {
 	header .navbar-header {
